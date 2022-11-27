@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=64&duration=4999&pause=1000&color=ECDEF1&background=000000&center=true&vCenter=true&width=435&height=80&lines=Hi%2CI'm+Pranjal;Hi%2CI'm+Psi;Check+out+my+Projects;Android+Developer)](https://git.io/typing-svg"></a>
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Teko&size=64&duration=4999&pause=1000&color=ECDEF1&background=000000&center=true&vCenter=true&width=435&height=80&lines=Hi%2CI'm+Pranjal;Hi%2CI'm+Psi;Check+out+my+Projects;Android+Developer"></a>
 </p>
 
 <img src="Images/Banner.svg" >
