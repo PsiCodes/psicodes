@@ -1,11 +1,6 @@
-<h1 align="center">Hi 👋, I'm Pranjal Khanna</h1>
-<h3 align="center">Android Developer</h3>
-
-- 🔭 I’m currently working on **an Android app**
-
-- 🌱 I’m currently learning **Machine Learning**
+<h1 align="center">Hi 👋, I'm Pranjal</h1>
 ### Overall Status
-![Stats](https://github-readme-stats.vercel.app/api?username=PsiCodes&show_icons=true&icon_color=990000&title_color=990000)    
+![Stats](https://github-readme-stats.vercel.app/api?username=PsiCodes&show_icons=true&icon_color=000000&title_color=000000)    
 ![Lang](https://github-readme-stats.vercel.app/api/top-langs/?username=PsiCodes&layout=compact&title_color=990000&hide=javascript,html,css)   
 ![](https://komarev.com/ghpvc/?username=PsiCodes) 
 <h3 align="left">Languages and Tools:</h3>
