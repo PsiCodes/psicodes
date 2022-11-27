@@ -1,5 +1,5 @@
 <h1 align="center">Hi,I'm Pranjal</h1>
-<img src="" >
+<img src="Images/Banner.svg" >
 
 ### Overall Status
 ![Stats](https://github-readme-stats.vercel.app/api?username=PsiCodes&show_icons=true&icon_color=DDB9EA&title_color=C5A9CF&bg_color=00000000&text_color=ECDEF1&border_color=ECDEF1)    
