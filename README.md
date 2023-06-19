@@ -46,6 +46,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/Psicodes/Psicodes/output/snake.svg" alt="Snake animation" />
+![snake gif](https://github.com/MeghnaS21/MeghnaS21/blob/output/github-contribution-grid-snake.svg)
 
 ###
