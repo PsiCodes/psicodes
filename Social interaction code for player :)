@@ -1,0 +1,119 @@
+using System;
+using System.Collections.Generic;
+
+class NPC
+{
+    public string Name { get; }
+    public string Personality { get; }
+    public int Relationship { get; private set; }
+    public List<string> KnownTopics { get; } = new List<string>();
+
+    public NPC(string name, string personality)
+    {
+        Name = name;
+        Personality = personality;
+        Relationship = 50; // Starting relationship level
+    }
+
+    public void Interact(Player player)
+    {
+        Console.WriteLine($"{Name}: Hello, {player.Name}!");
+        ShowTopics();
+
+        Console.Write("Choose a topic to discuss: ");
+        string topic = Console.ReadLine();
+
+        if (KnownTopics.Contains(topic))
+        {
+            RespondToTopic(topic, player);
+        }
+        else
+        {
+            Console.WriteLine($"{Name}: I haven't heard about that before.");
+        }
+    }
+
+    private void RespondToTopic(string topic, Player player)
+    {
+        string response = GenerateResponse(topic, player);
+        Console.WriteLine($"{Name}: {response}");
+
+        int relationshipChange = CalculateRelationshipChange(response, player.Personality);
+        Relationship += relationshipChange;
+    }
+
+    private void ShowTopics()
+    {
+        Console.WriteLine($"{Name}: Let's talk about:");
+        foreach (string topic in KnownTopics)
+        {
+            Console.WriteLine("- " + topic);
+        }
+    }
+
+    private string GenerateResponse(string topic, Player player)
+    {
+        // Logic to generate a response based on the NPC's personality and topic
+        return "I find that topic interesting!";
+    }
+
+    private int CalculateRelationshipChange(string response, string playerPersonality)
+    {
+        // Logic to calculate relationship change based on response and player's personality
+        return 2;
+    }
+}
+
+class Player
+{
+    public string Name { get; }
+    public string Personality { get; }
+
+    public Player(string name, string personality)
+    {
+        Name = name;
+        Personality = personality;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Enter your player name: ");
+        string playerName = Console.ReadLine();
+        Console.Write("Choose your personality type: ");
+        string playerPersonality = Console.ReadLine();
+        Player player = new Player(playerName, playerPersonality);
+
+        NPC npc1 = new NPC("Villager 1", "Friendly");
+        NPC npc2 = new NPC("Villager 2", "Reserved");
+        npc1.KnownTopics.Add("weather");
+        npc1.KnownTopics.Add("village news");
+        npc2.KnownTopics.Add("farming");
+        npc2.KnownTopics.Add("local legends");
+
+        while (true)
+        {
+            Console.Write("Choose an NPC to interact with (1/2) or type 'exit' to quit: ");
+            string npcChoice = Console.ReadLine();
+
+            if (npcChoice == "1")
+            {
+                npc1.Interact(player);
+            }
+            else if (npcChoice == "2")
+            {
+                npc2.Interact(player);
+            }
+            else if (npcChoice.ToLower() == "exit")
+            {
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice. Please select a valid option.");
+            }
+        }
+    }
+}
